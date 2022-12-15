@@ -1,0 +1,195 @@
+:root {
+    --text-rd: #FF4A44;
+    --text-rd-dark: #FD776F;
+    --text-or: #C26F1C;
+    --text-or-dark: #F0A264;
+    --text-yw: #3E3C00;
+    --text-yw-dark: #EFD10A;
+    --text-yw-shadow: 0.1em 0.1em 0.1em #EAEB74;
+    --text-yw-shadow-dark: unset;
+    --text-gr: #34A853;
+    --text-gr-dark: #3FCC5E;
+    --text-bl: #3C85FF;
+    --text-bl-dark: #98BFE2;
+    --text-vt: #A142F4;
+    --text-vt-dark: #C6A3F4;
+    --hl-rd: #FDDEE0;
+    --hl-rd-light: #FFE4DF;
+    --hl-rd-dark: #702D29;
+    --hl-rd-span-dark: #F0ADA4;
+    --hl-rd-bg-dark: #572924;
+    --hl-rd-text-dark: #FFC6BD;
+    --hl-rd-bar-dark: #FFB9AF;
+    --hl-or: #FBE2CA;
+    --hl-or-light: #FFE9CC;
+    --hl-or-dark: #603F17;
+    --hl-or-span-dark: #ECBA81;
+    --hl-or-bg-dark: #553D24;
+    --hl-or-text-dark: #FFDAB8;
+    --hl-or-bar-dark: #FFCA8C;
+    --hl-yw: #FFEFC0;
+    --hl-yw-light: #F8F9AA;
+    --hl-yw-dark: #615F14;
+    --hl-yw-span-dark: #DFE07E;
+    --hl-yw-bg-dark: #453E1E;
+    --hl-yw-text-dark: #E8E67D;
+    --hl-yw-bar-dark: #E5E579;
+    --hl-gr: #DDF7D9;
+    --hl-gr-light: #D8FFD1;
+    --hl-gr-dark: #2D4F2D;
+    --hl-gr-span-dark: #9FE39B;
+    --hl-gr-bg-dark: #253F27;
+    --hl-gr-text-dark: #B3DDAB;
+    --hl-gr-bar-dark: #95DB91;
+    --hl-bl: #D6EEF8;
+    --hl-bl-light: #D4EEFF;
+    --hl-bl-dark: #224356;
+    --hl-bl-span-dark: #BAD7EB;
+    --hl-bl-bg-dark: #183C4D;
+    --hl-bl-text-dark: #A7DCE8;
+    --hl-bl-bar-dark: #A7DCE8;
+    --hl-vt: #EAE0F4;
+    --hl-vt-light: #F5E9FF;
+    --hl-vt-dark: #614477;
+    --hl-vt-span-dark: #E6C9EB;
+    --hl-vt-bg-dark: #4A2B45;
+    --hl-vt-text-dark: #DDC3EB;
+    --hl-vt-bar-dark: #E5C0EB;
+}
+
+// Basic Highlight Style
+.highlight-color--red,
+.highlight-color--orange,
+.highlight-color--yellow,
+.highlight-color--green,
+.highlight-color--blue,
+.highlight-color--purple {
+    border-radius: 3px;
+}
+.rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) {
+    span {
+        &.highlight-color--red,
+        &.highlight-color--orange,
+        &.highlight-color--yellow,
+        &.highlight-color--green,
+        &.highlight-color--blue,
+        &.highlight-color--purple {
+            font-weight: 550;
+        }
+    }
+}
+@mixin TextColorizer(
+    $hl-rd,
+    $hl-rd-text,
+    $hl-or,
+    $hl-or-text,
+    $hl-yw,
+    $hl-yw-text,
+    $hl-gr,
+    $hl-gr-text,
+    $hl-bl,
+    $hl-bl-text,
+    $hl-vt,
+    $hl-vt-text,
+    $text-rd,
+    $text-or,
+    $text-yw,
+    $text-yw-shadow,
+    $text-gr,
+    $text-bl,
+    $text-vt
+) {
+    .highlight-color--red {
+        background-color: $hl-rd;
+        color: $hl-rd-text;
+    }
+    .highlight-color--orange {
+        background-color: $hl-or;
+        color: $hl-or-text;
+    }
+    .highlight-color--yellow {
+        background-color: $hl-yw;
+        color: $hl-yw-text;
+    }
+    .highlight-color--green {
+        background-color: $hl-gr;
+        color: $hl-gr-text;
+    }
+    .highlight-color--blue {
+        background-color: $hl-bl;
+        color: $hl-bl-text;
+    }
+    .highlight-color--purple {
+        background-color: $hl-vt;
+        color: $hl-vt-text;
+    }
+    .bold.highlight-color--red {
+        background-color: unset;
+        color: $text-rd;
+    }
+    .bold.highlight-color--orange {
+        background-color: unset;
+        color: $text-or;
+    }
+    .bold.highlight-color--yellow {
+        background-color: unset;
+        color: $text-yw;
+        text-shadow: $text-yw-shadow;
+    }
+    .bold.highlight-color--green {
+        background-color: unset;
+        color: $text-gr;
+    }
+    .bold.highlight-color--blue {
+        background-color: unset;
+        color: $text-bl;
+    }
+    .bold.highlight-color--purple {
+        background-color: unset;
+        color: $text-vt;
+    }
+}
+@include TextColorizer(
+    var(--hl-rd),
+    inherit,
+    var(--hl-or),
+    inherit,
+    var(--hl-yw),
+    inherit,
+    var(--hl-gr),
+    inherit,
+    var(--hl-bl),
+    inherit,
+    var(--hl-vt),
+    inherit,
+    var(--text-rd), 
+    var(--text-or), 
+    var(--text-yw), 
+    var(--text-yw-shadow), 
+    var(--text-gr), 
+    var(--text-bl), 
+    var(--text-vt)
+);
+.dark {
+    @include TextColorizer(
+        var(--hl-rd-dark),
+        var(--hl-rd-text-dark),
+        var(--hl-or-dark),
+        var(--hl-or-text-dark),
+        var(--hl-yw-dark),
+        var(--hl-yw-text-dark),
+        var(--hl-gr-dark),
+        var(--hl-gr-text-dark),
+        var(--hl-bl-dark),
+        var(--hl-bl-text-dark),
+        var(--hl-vt-dark),
+        var(--hl-vt-text-dark),
+        var(--text-rd-dark), 
+        var(--text-or-dark), 
+        var(--text-yw-dark), 
+        var(--text-yw-shadow-dark), 
+        var(--text-gr-dark), 
+        var(--text-bl-dark), 
+        var(--text-vt-dark)
+    );
+}
