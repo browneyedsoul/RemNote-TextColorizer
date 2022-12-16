@@ -14,42 +14,42 @@
     --text-vt: #A142F4;
     --text-vt-dark: #C6A3F4;
     --hl-rd: #FDDEE0;
-    --hl-rd-light: #FFE4DF;
+    --hl-rd-bg: #FFEEEB;
     --hl-rd-dark: #702D29;
     --hl-rd-span-dark: #F0ADA4;
     --hl-rd-bg-dark: #572924;
     --hl-rd-text-dark: #FFC6BD;
     --hl-rd-bar-dark: #FFB9AF;
     --hl-or: #FBE2CA;
-    --hl-or-light: #FFE9CC;
+    --hl-or-bg: #FFF0DD;
     --hl-or-dark: #603F17;
     --hl-or-span-dark: #ECBA81;
     --hl-or-bg-dark: #553D24;
     --hl-or-text-dark: #FFDAB8;
     --hl-or-bar-dark: #FFCA8C;
     --hl-yw: #FFEFC0;
-    --hl-yw-light: #F8F9AA;
+    --hl-yw-bg: #FEFFD8;
     --hl-yw-dark: #615F14;
     --hl-yw-span-dark: #DFE07E;
     --hl-yw-bg-dark: #453E1E;
     --hl-yw-text-dark: #E8E67D;
     --hl-yw-bar-dark: #E5E579;
     --hl-gr: #DDF7D9;
-    --hl-gr-light: #D8FFD1;
+    --hl-gr-bg: #E7F8E9;
     --hl-gr-dark: #2D4F2D;
     --hl-gr-span-dark: #9FE39B;
     --hl-gr-bg-dark: #253F27;
     --hl-gr-text-dark: #B3DDAB;
     --hl-gr-bar-dark: #95DB91;
     --hl-bl: #D6EEF8;
-    --hl-bl-light: #D4EEFF;
+    --hl-bl-bg: #E4F3FD;
     --hl-bl-dark: #224356;
     --hl-bl-span-dark: #BAD7EB;
     --hl-bl-bg-dark: #183C4D;
     --hl-bl-text-dark: #A7DCE8;
     --hl-bl-bar-dark: #A7DCE8;
     --hl-vt: #EAE0F4;
-    --hl-vt-light: #F5E9FF;
+    --hl-vt-bg: #F8EFFF;
     --hl-vt-dark: #614477;
     --hl-vt-span-dark: #E6C9EB;
     --hl-vt-bg-dark: #4A2B45;
@@ -150,17 +150,17 @@
     }
 }
 @include TextColorizer(
-    var(--hl-rd),
+    var(--hl-rd-bg),
     inherit,
-    var(--hl-or),
+    var(--hl-or-bg),
     inherit,
-    var(--hl-yw),
+    var(--hl-yw-bg),
     inherit,
-    var(--hl-gr),
+    var(--hl-gr-bg),
     inherit,
-    var(--hl-bl),
+    var(--hl-bl-bg),
     inherit,
-    var(--hl-vt),
+    var(--hl-vt-bg),
     inherit,
     var(--text-rd), 
     var(--text-or), 
@@ -172,17 +172,17 @@
 );
 .dark {
     @include TextColorizer(
-        var(--hl-rd-dark),
+        var(--hl-rd-bg-dark),
         var(--hl-rd-text-dark),
-        var(--hl-or-dark),
+        var(--hl-or-bg-dark),
         var(--hl-or-text-dark),
-        var(--hl-yw-dark),
+        var(--hl-yw-bg-dark),
         var(--hl-yw-text-dark),
-        var(--hl-gr-dark),
+        var(--hl-gr-bg-dark),
         var(--hl-gr-text-dark),
-        var(--hl-bl-dark),
+        var(--hl-bl-bg-dark),
         var(--hl-bl-text-dark),
-        var(--hl-vt-dark),
+        var(--hl-vt-bg-dark),
         var(--hl-vt-text-dark),
         var(--text-rd-dark), 
         var(--text-or-dark), 
