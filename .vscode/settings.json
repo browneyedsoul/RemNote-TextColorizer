@@ -1,6 +1,10 @@
 {
-  "editor.formatOnPaste": false,
-  "editor.formatOnSave": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "prettier.useTabs": false,
+  "prettier.printWidth": 240,
   "liveSassCompile.settings.formats": [
     {
       "extensionName": ".css",
@@ -8,25 +12,12 @@
       "savePath": "~/.."
     }
   ],
-  "liveSassCompile.settings.excludeList": [
-    "/**/node_modules/**",
-    "/.vscode/**"
-  ],
+  "liveSassCompile.settings.excludeList": ["/**/node_modules/**", "/.vscode/**"],
   "liveSassCompile.settings.generateMap": false,
-  "liveSassCompile.settings.watchOnLaunch": false,
-  "liveSassCompile.settings.compileOnWatch": false,
   "liveSassCompile.settings.autoprefix": ["defaults"],
   "[scss]": {
     "editor.foldingStrategy": "indentation",
     "editor.suggest.insertMode": "replace",
-    "editor.defaultFormatter": "EditorConfig.EditorConfig",
-    "editor.formatOnSave": true,
-    "editor.formatOnPaste": true,
-    "editor.formatOnType": true
-  },
-  "[css]": {
-    "editor.formatOnSave": true,
-    "editor.formatOnPaste": true,
-    "editor.formatOnType": true
+    "editor.formatOnSave": false
   }
 }
