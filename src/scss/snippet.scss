@@ -78,6 +78,11 @@
         }
     }
 }
+.document-title {
+    span.bold {
+        font-weight: 700;
+    }
+}
 @mixin TextColorizer(
     $hl-rd,
     $hl-rd-text,
