@@ -28,7 +28,7 @@
     --hl-or-text-dark: #FFDAB8;
     --hl-or-bar-dark: #FFCA8C;
     --hl-yw: #FFEFC0;
-    --hl-yw-bg: #FEFFD8;
+    --hl-yw-bg: #FAF4CD;
     --hl-yw-dark: #615F14;
     --hl-yw-span-dark: #DFE07E;
     --hl-yw-bg-dark: #453E1E;
@@ -131,6 +131,7 @@
         &.bold {
             color: $text-yw;
             background-color: unset;
+            text-shadow: $text-yw-shadow;
             span.whitespace-pre-wrap {
                 color: $text-yw;
                 background-color: unset;
