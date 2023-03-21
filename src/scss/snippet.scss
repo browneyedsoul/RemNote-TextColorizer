@@ -104,10 +104,32 @@
     $text-bl,
     $text-vt
 ) {
+    .highlight-color--red {
+        background-color: $hl-rd;
+        color: $hl-rd-text;
+    }
+    .highlight-color--orange {
+        background-color: $hl-or;
+        color: $hl-or-text;
+    }
+    .highlight-color--yellow {
+        background-color: $hl-yw;
+        color: $hl-yw-text;
+    }
+    .highlight-color--green {
+        background-color: $hl-gr;
+        color: $hl-gr-text;
+    }
+    .highlight-color--blue {
+        background-color: $hl-bl;
+        color: $hl-bl-text;
+    }
+    .highlight-color--purple {
+        background-color: $hl-vt;
+        color: $hl-vt-text;
+    }
     #tile__document {
         .highlight-color--red {
-            background-color: $hl-rd;
-            color: $hl-rd-text;
             &.bold {
                 color: $text-rd;
                 background-color: unset;
@@ -118,8 +140,6 @@
             }
         }
         .highlight-color--orange {
-            background-color: $hl-or;
-            color: $hl-or-text;
             &.bold, %orange {
                 color: $text-or;
                 background-color: unset;
@@ -127,8 +147,6 @@
             }
         }
         .highlight-color--yellow {
-            background-color: $hl-yw;
-            color: $hl-yw-text;
             &.bold {
                 color: $text-yw;
                 background-color: unset;
@@ -140,8 +158,6 @@
             }
         }
         .highlight-color--green {
-            background-color: $hl-gr;
-            color: $hl-gr-text;
             &.bold {
                 color: $text-gr;
                 background-color: unset;
@@ -152,8 +168,6 @@
             }
         }
         .highlight-color--blue {
-            background-color: $hl-bl;
-            color: $hl-bl-text;
             &.bold {
                 color: $text-bl;
                 background-color: unset;
@@ -164,8 +178,6 @@
             }
         }
         .highlight-color--purple {
-            background-color: $hl-vt;
-            color: $hl-vt-text;
             &.bold {
                 color: $text-vt;
                 background-color: unset;
